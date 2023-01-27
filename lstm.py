@@ -25,7 +25,7 @@ def train_network():
     network_input, network_output = prepare_sequences(notes, n_vocab)
 
     model = create_network(network_input, n_vocab)
-    model.load_weights("weights/weights-improvement-32-0.2055-bigger.hdf5")
+    model.load_weights("weights/weights-improvement-10-0.1891-bigger.hdf5")
     train(model, network_input, network_output)
 
 

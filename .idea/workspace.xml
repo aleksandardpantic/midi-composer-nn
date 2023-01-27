@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="" />
+    <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lstm.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,24 +24,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2H81NOZTT82G3vr4NmXFRYI4DQZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aleksandar/PycharmProjects/midi-composer-nn&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/aleksandar/PycharmProjects/midi-composer-nn"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/weights" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.read">
+  <component name="RunManager" selected="Python.lstm">
     <configuration name="lstm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.read" />
         <item itemvalue="Python.lstm" />
+        <item itemvalue="Python.read" />
         <item itemvalue="Python.wtf" />
         <item itemvalue="Python.predict" />
       </list>
@@ -153,5 +161,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
