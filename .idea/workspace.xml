@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="v3">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
       <recent name="$PROJECT_DIR$/weights" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lstm">
+  <component name="RunManager" selected="Python.predict">
     <configuration name="lstm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,10 +149,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.predict" />
         <item itemvalue="Python.lstm" />
         <item itemvalue="Python.read" />
         <item itemvalue="Python.wtf" />
-        <item itemvalue="Python.predict" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +186,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lstm.py</url>
-          <line>18</line>
+          <line>19</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
