@@ -2,6 +2,8 @@
 
 Neuronska mreža koja stvara od sekvence ulaza (nota) predviđa izlaz (notu). Krajnji izlaz je MIDI fajl koji može da se reprodukuje.
 
+Ulazni podaci su pesme iz nekih video igrica koje imaju sličan tempo i tonalitet.
+
 ## Trening
 
 Za postupak treniranja mreže pokreće se skripta lstm.py
@@ -10,7 +12,7 @@ Ova skripta će prvo serijalizovati sve fajlove iz '/midi_songs' u 'data/notes',
 
 Nakon toga stvara sekvence ulaza i izlaza, stvara model i kompajlira i na kraju pokreće trening.
 
-Model mreže se prikazuje u 'model/model.png' (pomoću keras metode plot_model), težine za svaku epohu se nalaze u 'weights' direktorijumu
+Model mreže se prikazuje u 'model/model.png' (pomoću keras metode plot_model), težine za svaku epohu se nalaze u 'weights' direktorijumu (na githubu samo krajnja jer su fajlovi ogromni)
 
 
 
