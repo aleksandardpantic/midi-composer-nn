@@ -68,7 +68,7 @@ def create_network(network_input, n_vocab):
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
     # ubacuju se tezine iz  epohe  sa najmanjim lossom hdf5
-    model.load_weights('weights/weights-improvement-32-0.2055-bigger.hdf5')
+    model.load_weights('weights/weights-improvement-10-0.1891-bigger.hdf5') # OVDE SE OVEK STAVLJAJU TEŽINE SA NAJMANJOM GREŠKOM
     # plot_model(model, "model/model.png", show_shapes=True)
     return model
 
@@ -110,7 +110,7 @@ def create_midi(prediction_output):
             notes = []
             for current_note in notes_in_chord:
                 new_note = note.Note(int(current_note))
-                new_note.storedInstrument = instrument.ChurchBells()
+                new_note.storedInstrument = instrument.Flute()
                 notes.append(new_note)
             new_chord = chord.Chord(notes)
             new_chord.offset = offset
@@ -119,14 +119,14 @@ def create_midi(prediction_output):
         else:
             new_note = note.Note(pattern)
             new_note.offset = offset
-            new_note.storedInstrument = instrument.ChurchBells()
+            new_note.storedInstrument = instrument.Flute()
             output_notes.append(new_note)
 
         offset += 0.5
 
     midi_stream = stream.Stream(output_notes)
 
-    midi_stream.write('midi', fp='output/ChurchBells.mid')
+    midi_stream.write('midi', fp='output/Flute.mid')
 
 
 if __name__ == '__main__':

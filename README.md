@@ -1,38 +1,22 @@
-# Classical Piano Composer
+# GENERATOR MUZIKE
 
-This project allows you to train a neural network to generate midi music files that make use of a single instrument
+Neuronska mreža koja stvara od sekvence ulaza (nota) predviđa izlaz (notu). Krajnji izlaz je MIDI fajl koji može da se reprodukuje.
 
-## Requirements
+## Trening
 
-* Python 3.x
-* Installing the following packages using pip:
-	* Music21
-	* Keras
-	* Tensorflow
-	* h5py
+Za postupak treniranja mreže pokreće se skripta lstm.py
 
-## Training
+Ova skripta će prvo serijalizovati sve fajlove iz '/midi_songs' u 'data/notes', da bi svaki sledeći trening sa istim podacima bio brži.
 
-To train the network you run **lstm.py**.
+Nakon toga stvara sekvence ulaza i izlaza, stvara model i kompajlira i na kraju pokreće trening.
 
-E.g.
+Model mreže se prikazuje u 'model/model.png' (pomoću keras metode plot_model), težine za svaku epohu se nalaze u 'weights' direktorijumu
 
-```
-python lstm.py
-```
 
-The network will use every midi file in ./midi_songs to train the network. The midi files should only contain a single instrument to get the most out of the training.
 
-**NOTE**: You can stop the process at any point in time and the weights from the latest completed epoch will be available for text generation purposes.
+## Stvaranje kompozicije
 
-## Generating music
+Kada se mreža istrenira pokreće se skripta 'predict.py'
 
-Once you have trained the network you can generate text using **predict.py**
 
-E.g.
-
-```
-python predict.py
-```
-
-You can run the prediction file right away using the **weights.hdf5** file
+U metodi model.load_weights kao argument se stavlja putanja do težina sa najmanjom greškom, u ovom slučaju: **"weights/weights-improvement-10-0.1891-bigger.hdf5"** 

@@ -15,6 +15,7 @@ from keras.callbacks import ModelCheckpoint
 
 
 def train_network():
+    # get_notes()
     # notes je binary fajl gde su serijalizovane note koje su parsirane prethodno
     with open('data/notes', 'rb') as filepath:
         notes = pickle.load(filepath)  # pickle.load deserijalizuje taj fajl u numpy array
@@ -25,7 +26,8 @@ def train_network():
     network_input, network_output = prepare_sequences(notes, n_vocab)
 
     model = create_network(network_input, n_vocab)
-    model.load_weights("weights/weights-improvement-10-0.1891-bigger.hdf5")
+    model.load_weights("weights/weights-improvement-10-0.1891-bigger.hdf5") # JER JE TRENING MNOGO DUG VREMENSKI,
+    # UCITAVA SE WEIGHTS SA NAJMANJOM GRESKOM DA SE NASTAVI
     train(model, network_input, network_output)
 
 
@@ -96,7 +98,7 @@ def prepare_sequences(notes, n_vocab):
 
 def create_network(network_input, n_vocab):
     """ slojevi: LSTM ulazni, LSTM, LSTM, Dropout, Dense, Dropout, Dense izlazni,  funkcija gubitka categorical
-    crossentropy, ne znam koji je ovo optimizator: RMSPROP """
+    crossentropy,  optimizator: ROOT MEAN SQUARE PROPAGATION SA DEFAULT PARAMETRIMA """
     model = Sequential()
     model.add(LSTM(
         512,
