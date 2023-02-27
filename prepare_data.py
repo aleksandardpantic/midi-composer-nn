@@ -2,14 +2,16 @@ import pickle
 from keras.utils import np_utils
 from sklearn import model_selection
 
+import cfg
+
 
 def prepare_sequences():
+    sequence_length = cfg.sequence_length
     with open('data/notes', 'rb') as filepath:
         notes = pickle.load(filepath)
     # broj sekvenci, ne valja da bude mali zbog exploding gradijent i greske su velike, lstm pamti 100 nota unazad,
     # vise od 100 je pretesko za treniranje, treba mnogo vremena
-    sequence_length = 100
-    n_vocab = len(set(notes))
+
     # poredjani pojedinacni pitch
     pitchnames = sorted(set(item for item in notes))
 

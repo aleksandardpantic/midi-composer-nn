@@ -18,7 +18,7 @@ def generate():
     # isto kao u lstm.py
     pitchnames = sorted(set(item for item in notes))
     n_vocab = len(set(notes))
-    sequence_length = 100
+    sequence_length = cfg.sequence_length
     with open('data/test/input', 'rb') as filepath:
         network_input = pickle.load(filepath)
     model = create_network(sequence_length, n_vocab)  # ovde se stvara isti model kao u lstm.py
@@ -62,9 +62,9 @@ def generate_notes(model, network_input, pitchnames, n_vocab):
 
     pattern = network_input[start]  # pocetna sekvenca na osnovu koje se predvidja
     prediction_output = []
-
-    # model generise 500 nota, neke su i akordi
-    for note_index in range(30):
+    n_predictions = cfg.number_of_predictions
+    # model generise n_predictions nota, neke su i akordi
+    for note_index in range(n_predictions):
         prediction_input = numpy.reshape(pattern, (1, len(pattern), 1))
         prediction_input = prediction_input / float(n_vocab)
 

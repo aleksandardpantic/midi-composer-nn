@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="v3">
-      <change afterPath="$PROJECT_DIR$/data/test/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/test/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/train/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/train/output" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/Banjo.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/o4utput.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/output3.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/midi-composer-nn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/midi-composer-nn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lstm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
-    </list>
+    <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="midi indices" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aleksandar/PycharmProjects/midi_generation&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/aleksandar/PycharmProjects/midi-composer-nn"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/weights" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lstm">
+  <component name="RunManager" selected="Python.predict">
     <configuration name="lstm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,9 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.predict" />
         <item itemvalue="Python.lstm" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.predict" />
         <item itemvalue="Python.read" />
         <item itemvalue="Python.wtf" />
       </list>
@@ -198,6 +184,14 @@
       <option name="presentableId" value="Default" />
       <updated>1667651856203</updated>
     </task>
+    <task id="LOCAL-00001" summary="midi indices">
+      <created>1677415962604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677415962604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +219,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="midi indices" />
+    <option name="LAST_COMMIT_MESSAGE" value="midi indices" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -233,11 +229,6 @@
           <url>file://$PROJECT_DIR$/predict.py</url>
           <line>82</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lstm.py</url>
-          <line>87</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/predict.py</url>

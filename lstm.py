@@ -1,6 +1,5 @@
 import pickle
 import cfg
-import keras.metrics
 import numpy
 from keras.models import Sequential
 from keras.layers import Dense
@@ -8,6 +7,9 @@ from keras.layers import Dropout
 from keras.layers import LSTM
 from keras.layers import Activation
 from keras.layers import BatchNormalization as BatchNorm
+from keras.losses import CategoricalCrossentropy
+from keras.metrics import CategoricalAccuracy
+from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 
 
@@ -60,26 +62,31 @@ def load_sequences(n_vocab, sequence_length):
 
 def create_model(sequence_length, n_vocab):
     """ slojevi: LSTM ulazni, LSTM, LSTM, Dropout, Dense, Dropout, Dense izlazni,  funkcija gubitka categorical
-    crossentropy,  optimizator: ROOT MEAN SQUARE PROPAGATION SA DEFAULT PARAMETRIMA """
-    model = Sequential()
+    crossentropy,  metrika za validaciju: CATEGORICAL ACCURACY, optimizator: ADAM SA PARAMETRIMA LEARNING RATE 0.001 """
+    dropout_seed = cfg.dropout_seed
+    loss_function = CategoricalCrossentropy()
+    metrics = [CategoricalAccuracy()]
+    optimizer = Adam(learning_rate=0.001)
+    model = Sequential(name="neural composer")
     model.add(LSTM(
         512,
+        name="input LSTM",
         input_shape=(sequence_length, 1),
         recurrent_dropout=0.3,
         return_sequences=True
     ))
-    model.add(LSTM(512, return_sequences=True, recurrent_dropout=0.3, ))
-    model.add(LSTM(512))
+    model.add(LSTM(512, name="LSTM2", return_sequences=True, recurrent_dropout=0.3))
+    model.add(LSTM(512, name="LSTM3"))
     model.add(BatchNorm())
-    model.add(Dropout(0.3))  # dropout layer setuje random ulaze na nula po rejtu 1-1/0.3 tako smanjuje broj ulaza,
-    # sprecava overfitting
-    model.add(Dense(256))
+    model.add(Dropout(rate=0.3, seed=dropout_seed))  # dropout layer setuje 30% random ulaza na nula  tako smanjuje broj ulaza, a one koje nije
+    # setovao na 0 mnozi sa 1-0.3 da bi ukupan ulaz ostao isti, sprecava overfitting
+    model.add(Dense(256, name="DENSE256"))
     model.add(Activation('relu'))
     model.add(BatchNorm())
-    model.add(Dropout(0.3))
-    model.add(Dense(n_vocab))
+    model.add(Dropout(rate=0.3, seed=dropout_seed))
+    model.add(Dense(n_vocab, name="output DENSE"))
     model.add(Activation('softmax'))
-    model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=[keras.metrics.CategoricalAccuracy()])
+    model.compile(loss=loss_function, optimizer=optimizer, metrics=metrics)
 
     return model
 
