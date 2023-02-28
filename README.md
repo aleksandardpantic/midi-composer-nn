@@ -5,17 +5,26 @@ Neuronska mreža koja stvara od sekvence ulaza (nota ili akorda) predviđa izlaz
 
 Ulazni podaci su kompozicije iz video igrica koje imaju sličan tempo i tonalitet.
 
-## Trening
+## Priprema modela i podataka
+
 Za pripremu podataka za trening pokreće se skripta 'prepare_data.py' koja deserijalizuje MIDI fajlove
-, kreira parove ulaz izlaz, deli takve podatke na deo za trening i deo za test, onda ih ponovo serijalizuje u binarne fajlove. Ovo se radi samo jednom za svaki unikatni model.
+, kreira parove ulaz izlaz, deli takve podatke na deo za trening i deo za test, onda ih ponovo serijalizuje u binarne fajlove u odgovarajućim direktorijumima. Ovo se radi samo jednom za svaki unikatni model.
+
+Model mreže se prikazuje u 'model/model.png' (pomoću keras metode plot_model).
+
+Za pripremu modela mreže se pokreće skripta 'prepare_model.py', koja kreira model, generiše png i serijalizuje ga u fajl 'model_conf.hdf5'
+
+**Trening je vremenski dug i mora da se vrši u više navrata. Ovaj deo se radi samo jednom za svaku instancu treninga, tj. ako se menjaju model i/ili ulazni podaci, ovaj deo se izvršava ponovo.**
+
+## Trening
 
 Za postupak treniranja mreže pokreće se skripta 'lstm.py'.
 
 Ova skripta će prvo da deserijalizuje sve fajlove iz 'data/test' i 'data/train' i da normalizuje ulazne podatke.
 
-Nakon toga  stvara model i kompajlira i na kraju pokreće trening.
+Učitava konfiguraciju modela, učitava težine ako je potrebno, i na kraju pokreće trening.
 
-Model mreže se prikazuje u 'model/model.png' (pomoću keras metode plot_model), težine za svaku epohu se nalaze u 'weights' direktorijumu (na githubu samo krajnja jer su fajlovi ogromni)
+Težine za svaku epohu se nalaze u 'weights' direktorijumu (na githubu samo krajnja jer su fajlovi ogromni)
 
 
 
