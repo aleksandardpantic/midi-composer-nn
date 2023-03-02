@@ -5,38 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="v3">
-      <change afterPath="$PROJECT_DIR$/data/notes_new" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pitchnames" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Bolero of Fire.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Cave 1.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Cave.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Dark World.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Death Mountain.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Dungeon 5.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Dungeon 6.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Ending.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Fairy.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Final Battle.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Master Sword.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Overworld 1.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Town.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/Triforce.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/new/Bolero of Fire.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/new/Cave.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/new/Dark World.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/new/Death Mountain.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/new/Fairy.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/midi_songs/new/Master Sword.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/model_conf.hdf5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prepare_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TRARH.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/notes" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/input" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/output" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/input" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/input" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/output" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lstm.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model.png" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model_conf.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/model/model_conf.hdf5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prepare_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepare_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aleksandar/PycharmProjects/midi-composer-nn&quot;
+    &quot;last_opened_file_path&quot;: &quot;/home/aleksandar/PycharmProjects/midi_generation&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -93,6 +73,27 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.lstm">
+    <configuration name="TRARH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="midi-composer-nn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TRARH.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="lstm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,27 +157,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="midi-composer-nn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,10 +181,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.lstm" />
-        <item itemvalue="Python.utils" />
         <item itemvalue="Python.prepare_data" />
+        <item itemvalue="Python.TRARH" />
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.predict" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +218,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="sklearn-split" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -254,5 +234,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="midi indices" />
     <option name="LAST_COMMIT_MESSAGE" value="midi indices" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -12,7 +12,7 @@ from keras.utils import plot_model
 
 
 def create_model(sequence_length, n_vocab):
-    """ slojevi: LSTM ulazni, LSTM, LSTM, Dropout, Dense, Dropout, Dense izlazni,  funkcija gubitka categorical
+    """ slojevi: LSTM ulazni, LSTM, LSTM, Dropout, Dense, Dropout, Dense, Dropout, Dense izlazni,  funkcija gubitka categorical
     crossentropy,  metrika za validaciju: CATEGORICAL ACCURACY, optimizator: ADAM SA PARAMETRIMA LEARNING RATE 0.001 """
     dropout_seed = cfg.dropout_seed
     loss_function = CategoricalCrossentropy()
@@ -31,12 +31,17 @@ def create_model(sequence_length, n_vocab):
     model.add(BatchNorm())
     model.add(Dropout(rate=0.3, seed=dropout_seed, name="dropout1"))  # dropout layer setuje 30% random ulaza na nula
     #  tako smanjuje broj ulaza, a one koje nije setovao na 0 mnozi sa 1-0.3 da bi ukupan ulaz ostao isti, sprecava overfitting
-    model.add(Dense(512, name="DENSE"))
+    model.add(Dense(512, name="DENSE1"))
     model.add(Activation('relu', name="relu"))
     model.add(BatchNorm())
     model.add(Dropout(rate=0.3, seed=dropout_seed, name="dropout2"))
+    model.add(Dense(256, name="DENSE2"))
+    model.add(Activation('relu', name="relu2"))
+    model.add(BatchNorm())
+    model.add(Dropout(rate=0.3, seed=dropout_seed, name="dropout3"))
     model.add(Dense(n_vocab, name="output_DENSE"))
     model.add(Activation('softmax', name="softmax"))
     model.compile(loss=loss_function, optimizer=optimizer, metrics=metrics)
     plot_model(model, to_file="model/model.png", show_shapes=True)
     save_model(model=model, filepath="model/model_conf.hdf5", overwrite=True)
+    return model

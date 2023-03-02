@@ -9,13 +9,14 @@ from keras.callbacks import ModelCheckpoint, EarlyStopping
 
 def train_network():
     sequence_length = cfg.sequence_length
-    n_vocab = utils.get_n_vocab()
     train_input, test_input, train_output, test_output = load_sequences(sequence_length)
-    best_weights = cfg.best_weights
-    #model = load_model(filepath="model/model_conf.hdf5")
-    model = prepare_model.create_model(sequence_length, n_vocab)
-    model.load_weights(best_weights) # JER JE TRENING MNOGO DUG VREMENSKI,
-    # UCITAVA SE WEIGHTS SA NAJMANJOM GRESKOM DA SE NASTAVI
+    if cfg.model_remake:
+        n_vocab = utils.get_n_vocab()
+        model = prepare_model.create_model(sequence_length, n_vocab)
+    else:
+        model = load_model(filepath="model/model_conf.hdf5")
+        model.load_weights(cfg.best_weights)
+
     train(model, train_input, test_input, train_output, test_output)
 
 

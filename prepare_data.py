@@ -39,8 +39,6 @@ def get_notes():
     with open('data/pitchnames', 'wb') as filepath:
         pickle.dump(pitchnames, filepath)
 
-    return
-
 
 def prepare_sequences():
     """METODA SERIJALIZUJE PAROVE ULAZ IZLAZ GDE JE ULAZ NIZ OD 100 NOTA, A IZLAZ ONE HOT CODED NIZ, ZA TRAIN I TEST DEO"""
@@ -71,7 +69,7 @@ def prepare_sequences():
     network_output = np_utils.to_categorical(network_output)  # pretvara niz u binarnu matricu 0 i 1, za categorical
     # crossentropy je neophodno
     input_train, input_test, output_train, output_test = model_selection.train_test_split(network_input, network_output,
-                                                                                          test_size=0.15,
+                                                                                          test_size=0.2,
                                                                                           random_state=134)
 
     with open('data/train/input', 'wb') as filepath:
@@ -88,5 +86,5 @@ def prepare_sequences():
 
 
 if __name__ == '__main__':
-    # get_notes()
+    get_notes()
     prepare_sequences()
