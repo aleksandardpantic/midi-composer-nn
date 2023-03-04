@@ -14,8 +14,7 @@ def train_network():
         n_vocab = utils.get_n_vocab()
         model = prepare_model.create_model(sequence_length, n_vocab)
     else:
-        model = load_model(filepath="model/model_conf.hdf5")
-        model.load_weights(cfg.best_weights)
+        model = load_model(filepath=cfg.best_weights)
 
     train(model, train_input, test_input, train_output, test_output)
 
@@ -48,7 +47,7 @@ def train(model, network_input, val_input, network_output, val_output):
     )
     # early stopping je callback koji zaustavlja trening ako je mreza istrenirana pre isteka broja epoha treninga
     early_stopping = EarlyStopping(monitor='loss',
-                                   min_delta=0.02,  # najmanja promena u odnosu na prethodnu epohu
+                                   min_delta=0.01,  # najmanja promena u odnosu na prethodnu epohu
                                    patience=3,
                                    # broj epoha sa promenom manjom od delta vrednosti nakon ceka trening staje
                                    verbose=1,  # da prikaze zasto je trening zaustavljen
@@ -58,7 +57,7 @@ def train(model, network_input, val_input, network_output, val_output):
 
     model.fit(network_input, network_output,
               validation_data=(val_input, val_output),  # podaci za validaciju nakon svake epohe
-              epochs=200, initial_epoch=initial_epoch,
+              epochs=250, initial_epoch=initial_epoch,
               batch_size=128  # koliko ulaza se gura kroz mrezu, ali izgleda da je za tensorflow cpu nebitno
               , callbacks=callbacks_list)
 

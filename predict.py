@@ -1,4 +1,6 @@
 import pickle
+
+import keras
 import numpy
 import cfg
 from music21 import instrument, note, stream, chord
@@ -11,10 +13,10 @@ def generate():
     max_value = utils.get_max_value()
     with open('data/test/input', 'rb') as filepath:
         network_input = pickle.load(filepath)
-    model = load_model(filepath="model/model_conf.hdf5")
-    model.load_weights(cfg.best_weights)
-    prediction_output = generate_notes(model, network_input, max_value)
-    create_midi(prediction_output)  # serijalizuje output u midi fajl
+    model: keras.Model = load_model(cfg.best_weights)
+    for ind in range(20):
+        prediction_output = generate_notes(model, network_input, max_value)
+        create_midi(prediction_output, ind)  # serijalizuje output-v2 u midi fajl
 
 
 def generate_notes(model, network_input, max_value):
@@ -44,10 +46,11 @@ def generate_notes(model, network_input, max_value):
     return prediction_output
 
 
-def create_midi(prediction_output):
+def create_midi(prediction_output, ind):
+    ind += 9
     offset = 0
     output_notes = []
-    output_file = cfg.output_stream_file
+    output_file = "output-v3/output" + str(ind) + ".mid"
     for pattern in prediction_output:
 
         if ('.' in pattern) or pattern.isdigit():

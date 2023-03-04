@@ -5,18 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="v3">
-      <change afterPath="$PROJECT_DIR$/TRARH.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/model3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output1.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output10.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output11.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output12.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output13.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output14.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output15.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output16.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output17.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output18.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output19.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output2.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output20.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output21.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output22.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output23.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output24.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output25.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output26.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output27.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output28.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output3.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output5.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output6.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output7.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output8.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output9.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights-v3/weights-improvement-170-0.8134-bigger.hdf5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights-v3/weights-improvement-171-0.8089-bigger.hdf5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights-v3/weights-improvement-172-0.8057-bigger.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/midi-composer-nn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/midi-composer-nn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/notes" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/test/input" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/test/output" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/train/input" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/input" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/train/output" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lstm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.png" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model_conf.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/model/model_conf.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Banjo.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Banjo.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Choir.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Choir.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ChurchBells.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/ChurchBells.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Flute.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Flute.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Harpsichord.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Harpsichord.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Kalimba.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Kalimba.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Koto.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Koto.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Shamisen.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Shamisen.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/o4utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o4utput.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/o5utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o5utput.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/o6utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o6utput.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/o7utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o7utput.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output1.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/output1.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/output3.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/output3.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prepare_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prepare_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/weights-improvement-10-0.1891-bigger.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/weights-v2/weights-improvement-10-0.1891-bigger.hdf5" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +122,7 @@
       <recent name="$PROJECT_DIR$/weights" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.lstm">
+  <component name="RunManager" selected="Python.predict">
     <configuration name="TRARH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.predict" />
         <item itemvalue="Python.lstm" />
         <item itemvalue="Python.prepare_data" />
         <item itemvalue="Python.TRARH" />
         <item itemvalue="Python.utils" />
-        <item itemvalue="Python.predict" />
       </list>
     </recent_temporary>
   </component>

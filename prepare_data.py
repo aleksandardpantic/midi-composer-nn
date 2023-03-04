@@ -69,8 +69,8 @@ def prepare_sequences():
     network_output = np_utils.to_categorical(network_output)  # pretvara niz u binarnu matricu 0 i 1, za categorical
     # crossentropy je neophodno
     input_train, input_test, output_train, output_test = model_selection.train_test_split(network_input, network_output,
-                                                                                          test_size=0.2,
-                                                                                          random_state=134)
+                                                                                          test_size=0.1,
+                                                                                          random_state=100)
 
     with open('data/train/input', 'wb') as filepath:
         pickle.dump(input_train, filepath)

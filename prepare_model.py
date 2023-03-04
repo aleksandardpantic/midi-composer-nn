@@ -42,6 +42,6 @@ def create_model(sequence_length, n_vocab):
     model.add(Dense(n_vocab, name="output_DENSE"))
     model.add(Activation('softmax', name="softmax"))
     model.compile(loss=loss_function, optimizer=optimizer, metrics=metrics)
-    plot_model(model, to_file="model/model.png", show_shapes=True)
+    plot_model(model, to_file="model/model4.png", show_shapes=True)
     save_model(model=model, filepath="model/model_conf.hdf5", overwrite=True)
     return model
