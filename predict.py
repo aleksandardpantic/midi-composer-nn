@@ -11,17 +11,18 @@ import utils
 
 def generate():
     max_value = utils.get_max_value()
-    with open('data/test/input', 'rb') as filepath:
-        network_input = pickle.load(filepath)
     model: keras.Model = load_model(cfg.best_weights)
+    test_input, test_output = utils.get_test_data()
+    normalized_test_input = utils.normalize_and_reshape_inputs(test_input, cfg.sequence_length)
+    print(model.evaluate(normalized_test_input, test_output))
     for ind in range(20):
-        prediction_output = generate_notes(model, network_input, max_value)
+        prediction_output = generate_notes(model, test_input, max_value)
         create_midi(prediction_output, ind)  # serijalizuje output-v2 u midi fajl
 
 
 def generate_notes(model, network_input, max_value):
-    # random sekvenca ulaza kao pocetna tacka za predikciju
-    start = numpy.random.randint(0, len(network_input) - 1)  # random broj koji odredjuje pocectnu sekvencu od 100 na
+    # random sekvenca ulaza kao pocetna tacka za predikciju, tzv seed
+    start = numpy.random.randint(0, len(network_input) - 1)  # random broj koji odredjuje pocectnu sekvencu na
     # osnovu koje se predvidja prva nota
 
     int_to_note = utils.int_to_note()
@@ -47,7 +48,7 @@ def generate_notes(model, network_input, max_value):
 
 
 def create_midi(prediction_output, ind):
-    ind += 9
+    ind+=26
     offset = 0
     output_notes = []
     output_file = "output-v3/output" + str(ind) + ".mid"
@@ -74,6 +75,7 @@ def create_midi(prediction_output, ind):
 
     midi_stream = stream.Stream(output_notes)
     midi_stream.write('midi', fp=output_file)
+    print("Generisan fajl: " + output_file)
 
 
 if __name__ == '__main__':

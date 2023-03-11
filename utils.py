@@ -1,21 +1,19 @@
 from numpy import reshape
 import pickle
 
+import cfg
 
-def normalize_and_reshape_inputs(train_input, test_input, sequence_length):
+
+def normalize_and_reshape_inputs(input, sequence_length):
     """NORMALIZUJE SVE ULAZE"""
-    length_train = len(train_input)  # ukupan broj nota za treniranje (oko 36000)
-    length_test = len(test_input)  # ukupan broj nota za validaciju (oko 9000)
+    length_input = len(input)  # ukupan broj nota za
 
-    normalized_train_input = reshape(train_input,
-                                     (length_train, sequence_length, 1))  # niz se pretvara u niz od 100 nizova
-    normalized_test_input = reshape(test_input, (length_test, sequence_length, 1))
+    normalized_input = reshape(input, (length_input, sequence_length, 1))  # niz se pretvara u niz od 100 nizova
     max_value = get_max_value()
-    normalized_test_input = normalized_test_input / float(max_value)  # svaki ulaz ima int value od 0 do n, normalizuje
     # se tako sto se svaka int vrednost deli sa max
-    normalized_train_input = normalized_train_input / float(max_value)
+    normalized_input = normalized_input / float(max_value)
 
-    return normalized_train_input, normalized_test_input
+    return normalized_input
 
 
 def note_to_int():
@@ -49,7 +47,7 @@ def get_n_vocab():
 
 def get_max_value():
     """VRACA INT BROJ MAKSIMALNE INT VREDNOSTI NOTE, ZA NORMALIZACIJU ULAZA"""
-    max_value = max(int_to_note().keys())
+    max_value = get_n_vocab()-1
     return max_value
 
 
@@ -58,4 +56,11 @@ def get_pitchnames():
     with open('data/pitchnames', 'rb') as filepath:
         pitchnames = pickle.load(filepath)
     return pitchnames
+
+def get_test_data():
+    with open('data/test/input_test', 'rb') as filepath:
+        input = pickle.load(filepath)
+    with open('data/test/output_test', 'rb') as filepath:
+        output = pickle.load(filepath)
+    return input, output
 

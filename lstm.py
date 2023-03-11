@@ -9,33 +9,29 @@ from keras.callbacks import ModelCheckpoint, EarlyStopping
 
 def train_network():
     sequence_length = cfg.sequence_length
-    train_input, test_input, train_output, test_output = load_sequences(sequence_length)
+    network_input, network_output = load_sequences(sequence_length)
     if cfg.model_remake:
         n_vocab = utils.get_n_vocab()
         model = prepare_model.create_model(sequence_length, n_vocab)
     else:
         model = load_model(filepath=cfg.best_weights)
 
-    train(model, train_input, test_input, train_output, test_output)
+    train(model, network_input, network_output)
 
 
 def load_sequences(sequence_length):
     """METODA VRACA PAROVE ULAZ IZLAZ GDE JE ULAZ NIZ OD 100 NOTA NORMALIZOVAN, A IZLAZ ONE HOT CODED NIZ"""
-    with open('data/train/input', 'rb') as filepath:
-        train_input = pickle.load(filepath)
-    with open('data/test/input', 'rb') as filepath:
-        test_input = pickle.load(filepath)
-    with open('data/train/output', 'rb') as filepath:
-        train_output = pickle.load(filepath)
-    with open('data/test/output', 'rb') as filepath:
-        test_output = pickle.load(filepath)
+    with open('data/train/input_train', 'rb') as filepath:
+        input = pickle.load(filepath)
+    with open('data/train/output_train', 'rb') as filepath:
+        output = pickle.load(filepath)
 
-    normalized_train_input, normalized_test_input = normalize_and_reshape_inputs(train_input, test_input, sequence_length)
+    normalized_input = normalize_and_reshape_inputs(input,  sequence_length)
 
-    return normalized_train_input, normalized_test_input, train_output, test_output
+    return normalized_input, output
 
 
-def train(model, network_input, val_input, network_output, val_output):
+def train(model, network_input, network_output):
     filepath = cfg.weights_format
     initial_epoch = cfg.initial_epoch
     checkpoint = ModelCheckpoint(
@@ -56,10 +52,9 @@ def train(model, network_input, val_input, network_output, val_output):
     callbacks_list = [checkpoint, early_stopping]
 
     model.fit(network_input, network_output,
-              validation_data=(val_input, val_output),  # podaci za validaciju nakon svake epohe
-              epochs=250, initial_epoch=initial_epoch,
-              batch_size=128  # koliko ulaza se gura kroz mrezu, ali izgleda da je za tensorflow cpu nebitno
-              , callbacks=callbacks_list)
+              epochs=250, initial_epoch=initial_epoch, validation_split=0.1,
+              batch_size=cfg.batch_size,  # koliko ulaza se gura kroz mrezu
+              callbacks=callbacks_list)
 
 
 if __name__ == '__main__':

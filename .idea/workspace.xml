@@ -5,68 +5,167 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="401b7466-a4f3-4338-b516-11685551e08d" name="Changes" comment="v3">
-      <change afterPath="$PROJECT_DIR$/model/model3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output1.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output10.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output11.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output12.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output13.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output14.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output15.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output16.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output17.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output18.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output19.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output2.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output20.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output21.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output22.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output23.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output24.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output25.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output26.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output27.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output28.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output3.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output5.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output6.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output7.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output8.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output-v3/output9.mid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights-v3/weights-improvement-170-0.8134-bigger.hdf5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights-v3/weights-improvement-171-0.8089-bigger.hdf5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights-v3/weights-improvement-172-0.8057-bigger.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/midi-composer-nn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/midi-composer-nn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/notes_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/notes_train" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test/input_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test/output_test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/train/input_train" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output0.mid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output-v3/output4.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_3_23__09_58_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_3_23__09_58__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TRARH.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/cfg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/notes" beforeDir="false" afterPath="$PROJECT_DIR$/data/notes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test/input" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test/output" beforeDir="false" afterPath="$PROJECT_DIR$/data/test/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/train/input" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/input" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/train/output" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/notes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/input" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/input" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/train/output" beforeDir="false" afterPath="$PROJECT_DIR$/data/train/output_train" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lstm.py" beforeDir="false" afterPath="$PROJECT_DIR$/lstm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/0fithos.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/0fithos.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/8.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/8.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/AT.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/AT.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/BlueStone_LastDungeon.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/BlueStone_LastDungeon.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Bolero of Fire.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Bolero of Fire.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Cave 1.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Cave 1.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Cave.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Cids.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Cids.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/DOS.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/DOS.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Dark World.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Dark World.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Death Mountain.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Death Mountain.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Dungeon 5.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Dungeon 5.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Dungeon 6.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Dungeon 6.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Ending.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Ending.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Eternal_Harvest.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Eternal_Harvest.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/EyesOnMePiano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/EyesOnMePiano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FF3_Battle_(Piano).mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FF3_Battle_(Piano).mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FF3_Third_Phase_Final_(Piano).mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FF3_Third_Phase_Final_(Piano).mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FF4.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FF4.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FF6epitaph_piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FF6epitaph_piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FF8_Shuffle_or_boogie_pc.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FF8_Shuffle_or_boogie_pc.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FFIII_Edgar_And_Sabin_Piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FFIII_Edgar_And_Sabin_Piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FFIXQuMarshP.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FFIXQuMarshP.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FFIX_Piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FFIX_Piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FFVII_BATTLE.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FFVII_BATTLE.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/FFX_-_Ending_Theme_(Piano_Version)_-_by_Angel_FF.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/FFX_-_Ending_Theme_(Piano_Version)_-_by_Angel_FF.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Fairy.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Fairy.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Ff4-BattleLust.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Ff4-BattleLust.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Ff7-Cinco.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Ff7-Cinco.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Ff7-Jenova_Absolute.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Ff7-Jenova_Absolute.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Ff7-One_Winged.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Ff7-One_Winged.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Fiend_Battle_(Piano).mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Fiend_Battle_(Piano).mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Fierce_Battle_(Piano).mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Fierce_Battle_(Piano).mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Final Battle.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Final Battle.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Final_Fantasy_7_-_Judgement_Day_Piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Final_Fantasy_7_-_Judgement_Day_Piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Final_Fantasy_Matouyas_Cave_Piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Final_Fantasy_Matouyas_Cave_Piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Finalfantasy5gilgameshp.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Finalfantasy5gilgameshp.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Finalfantasy6fanfarecomplete.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Finalfantasy6fanfarecomplete.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Fyw_piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Fyw_piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Gold_Silver_Rival_Battle.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Gold_Silver_Rival_Battle.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/HighwindTakestotheSkies.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/HighwindTakestotheSkies.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/In_Zanarkand.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/In_Zanarkand.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/JENOVA.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/JENOVA.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Kingdom_Hearts_Dearly_Beloved.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Kingdom_Hearts_Dearly_Beloved.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Kingdom_Hearts_Traverse_Town.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Kingdom_Hearts_Traverse_Town.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Life_Stream.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Life_Stream.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Master Sword.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Master Sword.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/OTD5YA.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/OTD5YA.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Oppressed.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Oppressed.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Overworld 1.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Overworld 1.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Rachel_Piano_tempofix.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Rachel_Piano_tempofix.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Rydia_pc.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Rydia_pc.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Still_Alive-1.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Still_Alive-1.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Suteki_Da_Ne_(Piano_Version).mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Suteki_Da_Ne_(Piano_Version).mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Town.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Town.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Triforce.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Triforce.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/VincentPiano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/VincentPiano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ViviinAlexandria.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ViviinAlexandria.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/Zelda_Overworld.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/Zelda_Overworld.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ahead_on_our_way_piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ahead_on_our_way_piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/balamb.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/balamb.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/bcm.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/bcm.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/braska.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/braska.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/caitsith.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/caitsith.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/cosmo.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/cosmo.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/costadsol.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/costadsol.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/dayafter.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/dayafter.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/decisive.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/decisive.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/dontbeafraid.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/dontbeafraid.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/electric_de_chocobo.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/electric_de_chocobo.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff11_awakening_piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff11_awakening_piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff1battp.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff1battp.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff4-airship.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff4-airship.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff4-fight1.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff4-fight1.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff4-town.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff4-town.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff4_piano_collections-main_theme.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff4_piano_collections-main_theme.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff4pclov.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff4pclov.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff6shap.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff6shap.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff7-mainmidi.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff7-mainmidi.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff7themep.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff7themep.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ff8-lfp.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ff8-lfp.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/figaro.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/figaro.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/fortresscondor.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/fortresscondor.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/gerudo.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/gerudo.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/goldsaucer.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/goldsaucer.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/great_war.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/great_war.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/lurk_in_dark.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/lurk_in_dark.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/mining.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/mining.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/path_of_repentance.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/path_of_repentance.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/pkelite4.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/pkelite4.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/redwings.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/redwings.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/relmstheme-piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/relmstheme-piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/roseofmay-piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/roseofmay-piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/rufus.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/rufus.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/sandy.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/sandy.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/sera_.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/sera_.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/sobf.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/sobf.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/thenightmarebegins.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/thenightmarebegins.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/thoughts.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/thoughts.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/tifap.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/tifap.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/tpirtsd-piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/tpirtsd-piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/traitor.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/traitor.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ultimafro.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ultimafro.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/ultros.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/ultros.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/waltz_de_choco.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/waltz_de_choco.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/midi_songs/z_aeristhemepiano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/midi_train/z_aeristhemepiano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model3.png" beforeDir="false" afterPath="$PROJECT_DIR$/model/model3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/model_conf.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/model/model_conf.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Banjo.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Banjo.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Choir.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Choir.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/ChurchBells.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/ChurchBells.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Flute.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Flute.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Harpsichord.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Harpsichord.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Kalimba.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Kalimba.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Koto.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Koto.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Shamisen.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/Shamisen.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/o4utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o4utput.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/o5utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o5utput.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/o6utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o6utput.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/o7utput.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/o7utput.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/output1.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/output1.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/output3.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v2/output3.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output1.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output1.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output10.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output10.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output11.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output11.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output12.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output12.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output13.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output13.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output14.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output14.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output15.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output15.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output16.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output16.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output17.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output17.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output18.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output18.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output19.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output19.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output2.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output2.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output20.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output20.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output21.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output21.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output22.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output22.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output23.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output23.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output24.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output24.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output25.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output25.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output26.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output26.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output27.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output28.mid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output3.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output3.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output5.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output5.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output6.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output6.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output7.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output7.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output8.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output8.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output-v3/output9.mid" beforeDir="false" afterPath="$PROJECT_DIR$/output-v3/output9.mid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prepare_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prepare_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepare_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights/weights-improvement-10-0.1891-bigger.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/weights-v2/weights-improvement-10-0.1891-bigger.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights-v3/weights-improvement-170-0.8134-bigger.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/weights-v3/weights-improvement-164-0.3714-bigger.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights-v3/weights-improvement-171-0.8089-bigger.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights-v3/weights-improvement-172-0.8057-bigger.hdf5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,43 +206,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aleksandar/PycharmProjects/midi_generation&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/aleksandar/PycharmProjects/midi-composer-nn/midi_test"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/midi_test" />
+      <recent name="$PROJECT_DIR$/data/train" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/midi_test" />
+      <recent name="$PROJECT_DIR$/midi_train" />
+      <recent name="$PROJECT_DIR$/data/train" />
+      <recent name="$PROJECT_DIR$/data/test" />
       <recent name="$PROJECT_DIR$/weights" />
     </key>
   </component>
   <component name="RunManager" selected="Python.predict">
-    <configuration name="TRARH" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="midi-composer-nn" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TRARH.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="lstm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -207,7 +293,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="read (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="midi-composer-nn" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,11 +301,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weights-v3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weights-v3/read.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="midi-composer-nn" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weights-v4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weights-v4/read.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -231,10 +338,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.predict" />
-        <item itemvalue="Python.lstm" />
         <item itemvalue="Python.prepare_data" />
-        <item itemvalue="Python.TRARH" />
-        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.lstm" />
+        <item itemvalue="Python.read (1)" />
+        <item itemvalue="Python.read" />
       </list>
     </recent_temporary>
   </component>
@@ -289,9 +396,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/prepare_data.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/predict.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
